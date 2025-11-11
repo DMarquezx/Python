@@ -1,0 +1,20 @@
+#Calculadora de IMC projeto para usar if, elif e else
+
+peso_t = float(input('Qual o seu peso em Kg?'))
+altura_t = float(input('Qual a sua altura em metros?'))
+
+#calculando o IMC
+
+imc = peso_t / (altura_t ** 2)
+
+print(f'Seu IMC é: {imc:.2f}')
+
+if imc <18.5:
+    print('Classificação: Abaixo do peso.')
+elif imc < 25:
+    print('Classificação: Peso normal.')
+elif imc < 30:
+    print('Classificação: Sobrepeso.')
+
+else: #nao precisa do "imc > 30" porque se não for menor que 30, é maior que 30, e passa para o else
+    print('Classificação: Obesidade')
