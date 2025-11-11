@@ -1,0 +1,40 @@
+#definicao de usuario e senha
+
+#variáveis
+usuario_1 = 'joaozinho1214'
+senha_1 = 'milliorsenha'
+
+#controle de tentativas
+max_tentativas = 3
+tentativas_feitas = 0
+
+#flag para numero de tentavivas
+login_sucess = False
+
+print('--------->login acess!<---------')
+
+
+while tentativas_feitas < max_tentativas:
+
+    print(f'---------> Tentativas {tentativas_feitas + 1} de {max_tentativas}<---------')
+
+    # usuario e senha
+    perg_usuario = input('Digite seu nome de usuário!')
+    perg_senha = input('digite sua senha!')
+
+
+#verificador
+    if usuario_1 == perg_usuario and senha_1 == perg_senha:
+        login_sucess = True
+        break
+    else:
+        print('Usuário ou senha inválidos, tente novamente!')
+
+        tentativas_feitas = tentativas_feitas + 1
+
+if login_sucess:
+    print(f'Seja bem vindo(a) {usuario_1}')
+else:
+    print('Você excedeu o número máximo de tentativas. Acesso bloqueado.')
+
+print('------Programa finalizado------')
