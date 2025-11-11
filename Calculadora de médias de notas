@@ -1,0 +1,17 @@
+#Calculadora de média de notas (projeto de estudo)
+
+nota1 = float(input('Digite a primeira nota: '))
+
+nota2 = float(input('Digite a segunda nota: '))
+
+nota3 = float(input('Digite a sua terceira nota: '))
+
+media = (nota1 + nota2 + nota3) / 3 #calculo da media (n1, n2 e n3 foram somados e após a soma divididos)
+
+
+if media < 5.0:
+    print(f'Você tirou {media:.2f} e reprovou')
+elif media < 7.0:
+    print(f'Você tirou {media:.2f} e ficou de recuperação!')
+else:
+    print(f'Você tirou {media:.2f} foi aprovado!')
